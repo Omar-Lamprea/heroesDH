@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* height: 3000px; */
+}
+
+header{
+  position: sticky;
+  top: 0%;
+}
+header nav{
+  background-color: #001D2D;
+}
+header ul{
+  display: flex;
+  justify-content: end;
+}
+header li{
+  list-style: none;
+  margin: 0 1rem;
+  padding: .5rem;
+}
+header li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.descuentos{
+  background-color: #1CD1B0;
+  padding: 10px;
+}
+header .logo{
+  display: flex;
+  background-color: #00669F;
+  padding: 10px;
+  box-shadow: 0px 8px 12px 0px #8f8f8f;
+  color: #fff;
+  text-decoration: none;
+}
+.logo h1{
+  align-self: center;
+  margin-left: 1rem;
+}
+
+section{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card{
+  margin: 2rem 4.5rem;
+  padding: 0 15px;
+  width: 320px;
+  background-image: url('/img/gotica.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 1px 8px 8px 0px #d9d9d9;
+  border: 1px solid rgb(206, 206, 206);
+}
+.card-quinn{
+  background-image: url('/img/colores.png');
+}
+.card img{
+  margin-top: 20px;
+}
+
+.content img{
+  margin-top: 30%;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+.content{
+  text-align: center;
+}
+.content p{
+  text-align:start;
+}
+.content h2{
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.btn-show-more{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  width: 100px;
+  background-color: #00669F;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: initial;
+  letter-spacing: initial;
+}
+
+.add-super{
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  display: flex;
+  background-color: #00669F;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.add-super:hover{
+  background-color: #001D2D;
+}
+.add-super span{
+  margin: 0 4px;
+}
+
+footer{
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+footer p{
+  background-color: #00669F;
+  padding: 10px;
+  color: #fff;
+}
+
+
+@media (max-width:375px) {
+  section{
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 70%;
+  }
+  .content img{
+    margin-top: 22%;
+  }
+  .none{
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .card{
+    margin: 2rem 0;
+    width: 65%;
+  }
+}
+
+
+
+/* views */
+h1{
+  display: flex;
+  align-self: flex-start;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.form-container{
+  width: 60%;
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form input, main button, select{
+  margin: .5rem auto;
+  padding: .5rem;
+  width: 100%;
+}
+
+.btns-form{
+  display: flex;
+  justify-content: space-between;
+}
+.btns-form button, main button{
+  background-color: #1CD1B0;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 18px;
+  letter-spacing: .2rem;
+}
+.btns-form a{
+  /* margin: 0 1rem; */
+  width: 45%;
+}
+.btns-form .reset{
+  background-color: #888;
+  color: #fff;
+}
+
+.registro{
+  text-decoration: none;
+  color: #00669F;
+}
+.registro span{
+  color: #000
+}
+
+.personaje{
+  background-image: url('../img/colores1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.personaje .content{
+  position: relative;
+}
+.personaje .card-quinn{
+  width: 30%;
+  background-image: initial;
+  border-radius: 2rem;
+  box-shadow: initial;
+  padding: 0;
+}
+.personaje .card-quinn img[alt="perfil"]{
+  margin-top: -30%;
+  width: 30%;
+  position: absolute;
+  top: -5%;
+  left: 35%;
+  height: auto;
+}
+.personaje .card-quinn img[alt="like"]{
+  margin: 5%;
+  width: initial;
+  position: initial;
+}
+.personaje .card-quinn p{
+  padding: 1rem;
+}
+.personaje .card-quinn a p{
+  background-color: #2C0187;
+  border-radius: 0 0 2rem 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.personaje .card-quinn .iconos img{
+  width: 60px;
+  margin: 0;
+}
