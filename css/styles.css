@@ -7,9 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  /* height: 3000px; */
-}
 
 header{
   position: sticky;
@@ -115,6 +112,9 @@ section{
   border-radius: 50%;
   padding: 1rem;
 }
+.add-super a{
+  height: 33px;
+}
 .add-super:hover{
   background-color: #001D2D;
 }
@@ -135,27 +135,7 @@ footer p{
 }
 
 
-@media (max-width:375px) {
-  section{
-    flex-wrap: wrap;
-  }
-  .card{
-    width: 70%;
-  }
-  .content img{
-    margin-top: 22%;
-  }
-  .none{
-    display: none;
-  }
-}
 
-@media (max-width:768px) {
-  .card{
-    margin: 2rem 0;
-    width: 65%;
-  }
-}
 
 
 
@@ -172,7 +152,7 @@ main{
   min-height: 90vh;
 }
 .form-container{
-  width: 60%;
+  width: 40%;
   text-align: center;
 }
 form{
@@ -260,3 +240,101 @@ form input, main button, select{
   width: 60px;
   margin: 0;
 }
+
+
+.form-container-personaje{
+  width: 50%;
+  background-color: #00669F;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.form-container-personaje h1{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+form .personaje-tipo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-super{
+  margin: 1rem 0;
+  text-align: start;
+}
+.personaje-1{
+  margin: 1rem 0;
+  width: 49%;
+}
+.personaje-1 input, select, textarea{
+  border-radius: 5px;
+  border:none;
+  width: 100%;
+  padding: .5rem;
+}
+
+.form-super input[type="checkbox"], .form-super input[type="radio"]{
+  width: initial;
+}
+.form-super fieldset{
+  border: none;
+  margin: 1rem 0;
+}
+
+.btn-añadir-pj{
+  text-decoration: none;
+}
+.btn-añadir-pj button{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+
+
+
+@media (max-width:1400px){
+  .form-container-personaje{
+    width: 70%;
+  }
+
+}
+
+@media (max-width:768px) {
+  .card{
+    margin: 2rem 0;
+    width: 65%;
+  }
+  .form-container-personaje{
+    margin: 3rem 0;
+  }
+  form .personaje-tipo{
+    display: block;
+  }
+  .personaje-1{
+    width: initial;
+  }
+}
+
+@media (max-width:375px) {
+  section{
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 70%;
+  }
+  .content img{
+    margin-top: 22%;
+  }
+  .none{
+    display: none;
+  }
+  .form-container-personaje{
+    width: 90%;
+  }
+}
+
